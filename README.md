@@ -19,14 +19,14 @@ To install the pakages, open your terminal or command prompt(windows OS) and key
 
 
 ### Product page
-![Alt text](/screenshots/product page.png?raw=true "Optional Title")
+![Alt text](/screenshots/product%20page.png?raw=true "Optional Title")
 
 
 ### Sales Page
-![Alt text](/screenshots/sales page.png?raw=true "Optional Title")
+![Alt text](/screenshots/sales%20page.png?raw=true "Optional Title")
 
 
-### Customer account creation
+### Contact us
 ![Alt text](/screenshots/contact%20us.png?raw=true "Optional Title")
 
 
