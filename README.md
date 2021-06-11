@@ -1,5 +1,5 @@
 # super-market-mngt-system
-This is a super market management system, i built with my team.
+This is a super market management system, i built with my team. @mention DamaMichaelYohanna
 
 ## Note.
 For successful running of this project, you have to get all the project dependencies install. Open the requirement.txt file to see all the need packages.
