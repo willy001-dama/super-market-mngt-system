@@ -1,0 +1,4 @@
+Django==3.1.6
+matplotlib==3.3.4
+psycopg2-binary==2.8.4
+Pillow==7.0.0
