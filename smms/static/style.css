@@ -1,0 +1,706 @@
+body{
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+.clr{
+	clear:both;
+}
+/* the login page css */
+.login-page{
+	margin: auto;
+	margin-top: 10%;
+	padding: 2%;
+	opacity: 0.8;
+	border-radius:0px 20px 0px 20px;
+	background: silver;
+	width: 30%;
+
+}
+
+.login-page input{
+	margin: 1%;
+	float: right;
+}
+.login-page img{
+	height: 50px;
+	border-radius: 50px;
+
+}
+.login-page button{
+	width: 100%;
+	margin-right: auto;
+}
+
+/* change password page */
+.change-pass-page{
+	margin: auto;
+	margin-top: 10%;
+	padding: 2%;
+	border-radius:0px 20px 0px 20px;
+	background: white;
+	text-align: center;
+	width: 30%;
+
+}
+
+.change-pass-page input{
+	margin: 1%;
+	padding: 1%;
+	background: #f1f1f1;
+}
+.change-pass-page img{
+	height: 50px;
+	border-radius: 50px;
+
+}
+.change-pass-page button{
+	width: 70%;
+	padding: 1%;
+	margin-right: auto;
+
+}
+/* the base page css*/
+.first-head{
+	background: #f6f6f6;
+	padding: 1%;
+	text-align: right;
+}
+
+#logout{
+	background:tomato;
+	text-decoration: none;
+	padding: 0.3%;
+	color:white;
+	margin-left: 2%;
+	margin-right:3%;
+}
+#change-password{
+	text-decoration:none;
+	color: tomato;
+}
+.second-header{
+	padding: 2%;
+	padding-left:14%;
+	padding-right:4;
+	background: white;
+	color: green;
+	box-shadow: 0px 7px 11px tomato;
+	box-sizing: border-box;
+}
+
+.second-header img{
+	width: 90px;
+	height: 20px;
+	margin-right: 3%;
+}
+
+.second-header a{
+	padding: 1%;
+	padding-left:2%;
+	padding-right: 2%;
+	color: black;
+	opacity: 0.7;
+	text-decoration:none;
+	box-sizing: border-box;
+}
+.second-header a:hover{
+	color: tomato;
+	opacity:0.9;
+	border-top:1px solid tomato;
+}
+.social{
+	float: right;
+	margin:0.2%;
+}
+.social img{
+	width: 20px;
+	height: 20px;
+}
+.social a{
+	margin:0px;
+	padding: 0px;
+}
+
+
+
+/* the home page/dash board css*/
+
+.home-block{
+}
+.analysis{
+	text-align: center;
+	background: tomato;
+	color:white;
+	font-family:helvetica;
+	padding: 0.5%;
+}
+
+.sub1, .sub2, .sub3, .sub4{
+	width:23%;
+	float: left;
+	margin-left: 1.5%;
+}
+
+.sub1{
+	background:pink;
+	height: 150px;
+	color:red;
+	text-align: center;
+	padding:1%;
+	box-sizing: border-box;
+	background-image:url('/static/bg3.jpg');
+}
+.inner-sub1{
+	height: 98%;
+	font-size: 80%;
+	text-align: left;
+	background: white;
+	padding: 3%;
+	box-sizing: border-box;
+	border-radius: 20px 0px 20px 0px;
+	opacity: 0.8;
+}
+.inner-sub1 span{
+	background: green;
+	color:white;
+	border-radius: 30px;
+}
+/*  break point   */
+.sub2{
+	background:tomato;
+	height: 150px;
+	opacity: 0.7;
+	text-align: center;
+	box-sizing: border-box;
+	color:white;
+	padding: 0.1%;
+}
+.first-inner-sub2{
+	background: #f6f6f6;
+	height: 87%;
+	box-sizing: border-box;
+	padding: 4%;
+	border-radius: 30px 0px 0px 0px
+}
+.second-inner-sub2{
+	color: black;
+	text-align: right;
+	font-family: helvetica;
+}
+.inner-sub2{
+	float: left;
+	width:40%
+	height: 98%;
+	padding: 3%;
+	box-sizing: border-box;
+}
+.inner-sub2 img, .inner-sub3 img{
+	height: 40px;
+	width:40px;
+	border-radius: 50px;
+}
+
+.sub3{
+	background:tomato;
+	height: 150px;
+	opacity: 0.7;
+	text-align: center;
+	box-sizing: border-box;
+	color:white;
+	padding: 0.1%;
+}
+.first-inner-sub3{
+	background:#f6f6f6;
+	height: 87%;
+	box-sizing: border-box;
+	color: black;
+	padding: 4%;
+	border-radius: 0px 30px 0px 0px;
+}
+.second-inner-sub3{
+	color: black;
+	text-align: left;
+	font-family: helvetica;
+}
+.inner-sub3{
+	float: right;
+	width:40%;
+	height: 98%;
+	text-align: right;
+	padding: 3%;
+	box-sizing: border-box;
+}
+.sub4{
+	background:maroon;
+	height: 150px;
+}
+
+
+
+/* password change page cass*/
+
+.change-password{
+	text-align: center;
+	margin-top:1%;
+	list-style: none;
+	color:tomato;
+	background-image:url('/static/bg2.jpg');
+	font-size: 80%;
+	padding-top: 3%;
+	height: 500px;
+}
+.change-password img{
+	border-radius: 50px;
+	height: 80px;
+	width: 80px;
+}
+.change-password ul{
+	list-style: none;
+	
+
+}
+.change-password input{
+	width: 40%;
+	height: 30px;
+	background: silver;
+	border-radius: 5px;
+	opacity: 0.8;
+}
+.errorlist{
+	color:white;
+	font-size: 80%;	
+	text-shadow:0px 0px 3px red;
+}
+
+/* profile page css */
+
+.profile-block{
+	margin-top: 1%;
+	height: 450px;
+	padding: 4%;
+	padding-right: 3%;
+	color: red;
+}
+#add-user{
+	margin-bottom:2%;
+	text-align: right; 
+}
+
+#add-user img{
+	width:20px;
+	height:20px;
+}
+.profile-left{
+	box-sizing:border-box;
+	text-align: center;
+	padding-top:3%; 
+	float: left;
+	width:30%;
+	height: auto;
+	background: white;
+	box-shadow: 0px 0px 1px tomato;
+	border:5px solid #f5f5f5;
+}
+.profile-left img{
+	width: 135px;
+	height: 130px;
+	border-radius: 80px;
+	border:5px solid #f6f6f6;
+	margin-bottom:2%;
+}
+.profile-left hr{
+	width:80%;
+	opacity: 0.4;
+	color: #f6f6f6;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.profile-left p{
+	margin:2.5%;
+	font-weight: lighter;
+}
+.profile-left span{
+	font-weight: normal;
+}
+.profile-right{
+	box-sizing:border-box;
+	float: right;
+	width:67%;
+	height: 400px;
+	background: white;
+}
+#update-profile{
+	background: tomato;
+	padding: 1%;
+	color: white;
+	text-decoration:none;
+}
+#update-profile a{
+	color: white;
+	text-decoration:none;
+}
+#dt {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#dt td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#image{
+	width:40px;
+	height:40px;
+	border-radius: 50px;
+}
+.edits img{
+	width:20px;
+	height:20px;
+}
+
+/* member profile page css */
+.member-profile{
+	width: 100%;
+	margin-top:1%;
+	background:#f6f6f6;
+}
+.inner-profile{
+	background:white;
+	margin: auto;
+	width: 50%;
+	height:400px;
+	padding: 1%;
+	padding-top:6%;
+	box-shadow: 0px 2px 5px grey;
+}
+.member-pic{
+	height: 100px;
+	width:40%;
+	text-align:center;
+	background:none;
+	float: left;
+}
+.member-pic img{
+	width: 90%;
+	border:4px solid tomato;
+}
+.member-pic p{
+	background: tomato;
+	color: white;
+	padding: 1%;
+	border-radius: 5px;
+	margin: 1%;
+}
+#member-info{
+	float:right;
+	width: 50%;
+	height:auto;
+	text-align:center;
+	color:tomato;
+
+}
+#member-info hr{
+	margin:0px; 
+	background: red;
+	color: tomato;
+	opacity: 0.2;
+}
+#member-info p{
+	margin:1.5%;
+	background: white; 
+}
+
+/* profile update page css*/
+
+.profile-update{
+	width: 100%;
+	margin-top:1%;
+	background:#f6f6f6;
+}
+.inner-profile-update{
+	text-align: center;
+	background:white;
+	margin: auto;
+	width: 50%;
+	height:400px;
+	padding: 1%;
+	padding-top:6%;
+	box-shadow: 0px 2px 5px grey;
+}
+.inner-profile-update input,button{
+	width: 70%;
+}
+
+/* sales page css */
+.sale-left{
+	float: left;
+	background:#f6f6f6;
+	width: 25%;
+	height: auto;
+	box-sizing: border-box;
+}
+.filter-head{
+	background: tomato; 
+	color: white;
+	padding: 3%;
+	margin:0px;
+}
+#filter-p a{
+	color: silver;
+	text-decoration: none;
+	font-family: helvetica;
+	font-size: 90%;
+}
+#filter-any{
+	color: green;
+}
+#filter-p{
+	margin: 1.4%;
+	color: silver;
+}
+.sale-right{
+	float: right;
+	width: 74%;
+	height: 60%;
+}
+
+.search-form{
+	margin: 0px;
+	 background:#f6f6f6; 
+	 padding: 1%;
+	 border:1px solid #f1f1f1;
+	 margin-bottom: 3%;
+}
+#sale-table{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  	border-collapse: collapse;
+  	width: 100%;
+  	font-size: 80%;
+}
+#sale-table th {
+  padding: 1%;
+  margin: 0px;
+  text-align: left;
+}
+#sale-table td {
+  padding: 1px;
+  padding-left: 1%;
+  margin: 0px;
+  text-align: left;
+}
+#sale-table tr:nth-child(odd){
+	background-color: #f2f2f2;
+}
+.attr:hover{
+	position: relative;
+	top: -25px;
+	left: -35px;
+	width: 300px;
+	height: auto;
+	display: block;
+	z-index: 999;
+}
+
+/* add new sales page css */
+.add-sale-block{
+	width: 100%;
+	margin-top:1%;
+	background:#f6f6f6;
+}
+.inner-sale-block{
+	text-align: center;
+	background:white;
+	margin: auto;
+	width: 50%;
+	height: auto;
+	padding: 1%;
+	padding-top:6%;
+	box-shadow: 0px 2px 5px grey;
+}
+.inner-profile-update input,button{
+	width: 70%;
+}
+#add-sale-table input{
+	width: 70%;
+	background: #f6f6f6;
+}
+
+.inner-sale-block button{
+	background:tomato;
+	color:white;
+	width:20%;
+	border-radius: 5px;
+	}
+
+/* sale details page css */
+.sale-detail{
+	width: 100%;
+	margin-top:1%;
+	background:#f6f6f6;
+}
+.inner-sale-detail{
+	background:white;
+	margin: auto;
+	width: 50%;
+	height:400px;
+	padding: 1%;
+	padding-top:6%;
+	box-shadow: 0px 2px 5px grey;
+}
+.product-pic{
+	height: 100px;
+	width:40%;
+	text-align:center;
+	background:none;
+	float: left;
+}
+.product-pic img{
+	width: 90%;
+	border:4px solid tomato;
+	border-radius: 50%;
+}
+.product-pic p{
+	background: tomato;
+	color: white;
+	padding: 1%;
+	border-radius: 5px;
+	margin: 1%;
+}
+#product-info{
+	float:right;
+	width: 50%;
+	height:auto;
+	text-align:center;
+	color:tomato;
+
+}
+#product-info hr{
+	margin:0px; 
+	background: red;
+	color: tomato;
+	opacity: 0.2;
+}
+#product-info p{
+	margin:1.5%;
+	background: white; 
+}
+/* the products page css */
+.product-main-body{
+	padding: 2%;
+	margin: auto;
+	text-align: center;
+	margin-left: 2.5%;
+}
+#product-table{
+	text-align: center;
+	border-collapse: collapse;
+	border:1px solid grey;
+	padding:0px;
+}
+#product-table th{
+	background: tomato;
+	color:white;
+	font-weight: normal;
+	padding: 4px;
+	font-size: 90%;
+	border:1px solid grey;
+	width: 100px;
+}
+#product-table td{
+	font-size: 80%;
+	border-right: 1px solid grey;
+}
+#product-table a{
+	color:tomato;
+	text-decoration: none;
+}
+#product-page-top{
+	padding-left: 4.5%;
+}
+#product-page-top input{
+	background: #f6f6f6;
+	border:1px solid grey;
+	padding: 3px;
+ 
+}
+/* add new product page css */
+.add-product-block{
+	width: 100%;
+	margin-top:1%;
+	background:#f6f6f6;
+}
+.inner-product-block{
+	text-align: center;
+	background:white;
+	margin: auto;
+	width: 50%;
+	height: auto;
+	padding: 1%;
+	padding-top:6%;
+	box-shadow: 0px 2px 5px grey;
+}
+#add-product-table input{
+	width: 70%;
+	background: #f6f6f6;
+}
+
+.inner-product-block button{
+	background:tomato;
+	color:white;
+	width:50%;
+	border-radius: 5px;
+	}
+
+/* update sales record page css */
+.update-sale-block{
+	width: 100%;
+	margin-top:1%;
+	background:#f6f6f6;
+}
+#inner-update-sale{
+	text-align: center;
+	background:white;
+	margin: auto;
+	width: 50%;
+	height: auto;
+	padding: 1%;
+	padding-top:6%;
+	box-shadow: 0px 2px 5px grey;
+}
+#update-sale-table input{
+	width: 70%;
+	background: #f6f6f6;
+}
+#inner-update-sale button{
+	background:tomato;
+	color:white;
+	width:50%;
+	border-radius: 5px;
+	}
+
+/* the contact us page css */
+
+.contact-body{
+	font-family: helvetica;
+	padding:3%;
+	padding-left: 20%;
+	background: white;
+}
+.contact-body input, textarea{
+	background: #f2f2f2;
+	width: 40%;
+	border:none;
+	padding: 10px;
+}
+.contact-body textarea{
+	max-height: 80px;
+	max-width: 40%;
+	font-size: 15px;
+	height: 80px;
+}
+
+/* the customer creation page */
+

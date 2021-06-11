@@ -1,0 +1,170 @@
+/* general region */
+body{
+  background: #f5f5f5;
+  margin: 0px;
+  width: 100%;
+}
+.clr{
+	clear: both;
+}
+.frame3{
+	background: white;
+	border:2px ridge silver;
+	display: inline-grid;
+	width: 20%;
+	height: 55%;
+	padding: 7px;
+	margin-right:2%;
+	margin-bottom: 2%; 
+}
+.frame3 img{
+	width: 95%;
+	height: 200px;
+}
+.product-page-top{
+	margin-top: 15px;
+	padding-left:10px;
+
+}
+.second-body{
+	padding-left: 4%;
+}
+
+.bt {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.left-body{
+	 position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
+#bt td{
+  border: 1px solid #ddd;
+  padding: 8px;
+  background:#f9f9f9;
+}
+
+#bt th{
+	background: #f1f1f1;
+	width: 11%;
+	color: tomato;
+	text-align: left;
+	padding: 1%;
+}
+#bt tr:nth-child(even){
+	background-color: #f2f2f2;}
+#bt tr:hover {
+	background-color: #ddd;}
+
+/* the message page css */
+#message-table{
+	text-align: center;
+	border-collapse: collapse;
+	border:1px solid grey;
+	padding:0px;
+}
+#message-table th{
+	background: tomato;
+	color:white;
+	font-weight: normal;
+	padding: 4px;
+	font-size: 90%;
+	border:1px solid grey;
+	width: auto;
+}
+#message-table td{
+	font-size: 90%;
+	border-right: 1px solid grey;
+	border-bottom: 1px solid grey;
+	padding: 6px;
+	text-align: justify;
+}
+#message-table a{
+	color:tomato;
+	text-decoration: none;
+}
+
+/* customer creation page*/
+.customer-creation{
+	padding: 1% 1% 5% 5%;
+	text-align: left;
+	box-shadow: 1px 6px 10px white;
+	margin: 10px;
+	background:white;
+	float: right;
+	width: 40%;
+	border-radius: 10px;
+}
+.customer-creation label{
+	color: tomato;
+	text-align: left;
+}
+.customer-creation input{
+	border-radius: 5px;
+	box-shadow: 1px 0px 4px grey;
+	background: #f8f8f8;
+	border:none;
+	width: 80%; 
+	padding: 10px;
+}
+
+.write-up{
+	float: left; 
+	width: 40%; 
+	height: auto;
+	padding: 1%;
+	text-align: center;
+}
+
+.write-up hr{
+	color: white
+}
+
+.write-up p{
+	font-size: 50px;
+	color: white;
+	font-weight: bold;
+	text-shadow:1px 1px 5px tomato; 
+}
+
+.notif{
+	padding: 5% 3%;
+	background: white;
+	margin: 10% 30%;
+	text-align: center;
+	box-shadow: 0px 0px 10px tomato;
+	border-radius: 3px
+}
+
+.notif span{
+	font-weight: bold;
+	color:tomato
+}
+
+/* members creation page*/
+.add-user{
+	margin-top: 1%; 
+}
+.inner-div{
+	margin:2% 24%;
+	padding: 5% 5%;
+	background: white;
+	text-align: left;
+	box-shadow: 0px 0px 10px tomato;
+}
+.inner-div textarea{
+	background: white;
+	border-radius: 3px;
+	width: 69%;
+	border:1px solid grey;
+
+}
+.inner-div th{
+	color:tomato;
+}
