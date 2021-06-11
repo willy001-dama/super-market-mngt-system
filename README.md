@@ -14,6 +14,19 @@ To install the pakages, open your terminal or command prompt(windows OS) and key
 ### Dashboard
 ![Alt text](https://github.com/willy001-dama/super-market-mngt-system/blob/main/screenshots/admin%20dashboard.png?raw=true "Optional Title")
 
+### Shopping page
+![Alt text](/screenshots/shopping%20page.png?raw=true "Optional Title")
+
+
+### Product page
+![Alt text](/screenshots/product page.png?raw=true "Optional Title")
+
+
+### Sales Page
+![Alt text](/screenshots/sales page.png?raw=true "Optional Title")
+
+
 ### Customer account creation
-![Alt text](/screenshots/customercreateaccount.png?raw=true "Optional Title")
+![Alt text](/screenshots/contact%20us.png?raw=true "Optional Title")
+
 
