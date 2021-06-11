@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Account</title>
+	    <link rel="stylesheet" type="text/css" href="{% static 'sheet.css' %}">
+</head>
+<body style="background-image: url('/static/bg2.jpg');font-family: helvetica">
+	{% if error %}
+		<p>
+			An Error Occured, check and try again.
+		</p>
+		{% endif %}
+
+	
+	
+		{%if not info %}
+			<div class="parent-div" style="padding: 8%;box-sizing: border-box;">
+				<div class="write-up">
+					<hr>
+					<p>
+						Mardiat Super market Management System Project
+					</p>
+					<hr>
+					
+		
+				</div>
+				<div class="customer-creation" style="">
+					<p>Create An account here!</p>
+					<form action="." method="POST">
+						<label>First name:</label>
+						<br>
+						<input type="text" name="first_name" maxlength="20" required id="id_first_name">
+						<p></p>
+						<label>Last name:</label>
+						<br>
+						<input type="text" name="last_name" maxlength="20" required id="id_last_name">
+						<p></p>
+						<label>Email Address:</label>
+						<br>
+						<input type="email" name="email" maxlength="40" required id="id_email">
+						<p></p>
+						<button> Create Account</button>
+						{% csrf_token %}
+					</form>
+				</div>
+			</div>
+			
+		{% else %}
+			<div class="notif">
+					<p style="font-weight: bold;">
+						Account Created Successfully!
+					</p>
+					<p>
+						Your username is <span>{{info.username}}</span>
+					</p>
+					<p>
+						Your password is <span>{{info.password}}</span>
+					</p>
+					<hr style="color:tomato">
+					<span>Remember To Change Your Password</span>
+					<p>
+						<span style="background: tomato; padding: 2%;font-weight: bold;border-radius: 3px;">
+							<a href="/login/" style="text-decoration: none;color:white;"> Proceed To Login</a>
+						</span>
+					</p>
+			</div>
+					
+		{% endif %}
+
+</body>
+</html>

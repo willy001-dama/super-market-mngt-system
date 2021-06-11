@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{user|upper}}'S Profile {% endblock%}
+
+
+{% block content %}
+	<div class="member-profile">
+		<div class="inner-profile">
+			<div class="member-pic">
+				<img src="{{user.image.url}}">
+				<p>
+					{{user.get_full_name}}	
+				</p>
+				<p>
+					{{user.rank}}
+				</p>
+				
+			</div>
+			<div id="member-info">
+				<hr>
+				<p>
+					Phone
+					<br>
+					{{user.phone}}
+				</p>
+				<hr>
+				<p>
+					Email
+					<br>
+					{{user.get_email}}
+				</p>
+				<hr>
+				<p>
+					Gender
+					<br>
+					{{user.gender}}
+				</p>
+				<hr>
+				<p>
+					State
+					<br>
+					{{user.state}}
+				</p>
+				<hr>
+				<p>
+					<a href="/profile/">Back</a>
+				</p>
+			</div>
+		</div>
+		
+	</div>
+{% endblock %}

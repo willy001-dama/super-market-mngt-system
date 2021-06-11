@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title%}{{section}}{% endblock %}
+{% block content%}
+<div style="margin:12%;">
+	<p style="text-align: center;margin-top: 0px">
+			Here is your Reference Code 
+			<span style="text-shadow: 2px 12px 15px tomato;font-size: 30px;font-weight: bolder;color: tomato">{{code}}
+			</span>
+	</p>
+	<p style="text-align: center;font-family: "Trebuchet MS", consalas, Helvetica, sans-serif;">
+		Copy the above code, and when you are done, hit the logout button or this 
+		<a href="/logout/" style="background: tomato;text-decoration: none;padding:5px;border-radius: 10%;color:white">Close Button</a>
+		 then proceed to the cashier for payment and goods delivery. 
+	</p>
+	<center style="color: red;">
+		Note: the code are generated dynamically. As such, avoiding refreshing the page after copying the generated code.
+	</center>
+
+</div>
+
+{% endblock %}

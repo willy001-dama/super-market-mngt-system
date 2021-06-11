@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %} 
+	<div class="profile-update">
+		<div class="inner-profile-update">
+			<form action="." method="POST" enctype="multipart/form-data">
+			{{form.as_p}}
+			{% csrf_token %}
+			<button>update</button>
+		</form>
+		</div>
+	</div>
+{% endblock %}

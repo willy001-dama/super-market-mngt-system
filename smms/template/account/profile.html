@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} {{user|upper}}'S Profile{% endblock %} 
+
+{% block content %}
+	<div class="profile-block">
+		{% if messages %}
+				<p style="color: lime;text-align: center;">
+					{% for message in messages%}
+						{{message}}
+					{% endfor %}
+				</p>
+			{% endif %}
+		<div id="add-user">
+			<a href="/add_user/"><img src="{% static 'cross1.png'%}"></a>
+		</div>
+		<div class="profile-left">
+			<img src="{{ profile.image.url }}">
+
+			<p>
+				Name: <span>{{profile.get_full_name}}</span>
+			</p>
+			<hr>
+			<p>
+				Rank: <span>{{profile.rank}}</span> 
+			</p>
+			<hr>
+			<p>
+				Phone: <span>{{profile.phone}}</span>
+			</p>
+			<hr>
+			<p>
+				Email: <span>{{profile.user.email}}</span>
+			</p>
+			<hr>
+			<p>
+				Gender: <span>{{profile.gender}}</span>
+			</p>
+			<hr>
+			<p>
+				State: <span>{{profile.state}}</span>
+			</p>
+			<hr>
+			<p id="update-profile">
+				<a href="/update_profile/{{profile.id}}">Update</a>
+			</p>
+		</div>
+		<div class="profile-right">
+			
+			<p style="text-align: center;background:tomato;margin-top:0px;padding: 1%;color: white;">
+				Manage Members
+			</p>
+			<table id="dt">
+				<tr>
+				<th>Name</th>
+				<th>Phone</th>
+				<th>Email Address</th>
+				<th>Image</th>
+				<th>Actions</th>
+				</tr>
+				{% for user in all_user %}
+				<tr>
+					<td>
+						{{user.get_full_name}}
+					</td>
+					<td>{{user.phone}}</td>
+					<td>{{user.get_email}}</td>
+					<td><img id="image" src="{{user.get_image}}" ></td>
+					<td class="edits">
+						<a href="/update_profile/{{user.id}}"><img src="{% static 'biro.jpg' %}"></a>
+						<a href="/delete_profile/{{user.id}}"><img src="{% static 'del.jpeg' %}"></a>
+						<a href="/view_profile/{{user.id}}"><img src="{% static 'search1.jpg' %}"></a>
+					</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+		
+	</div>
+
+{% endblock %}

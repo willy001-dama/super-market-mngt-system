@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %} base title {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'sheet.css' %}">
+
+</head>
+<body>
+{% block head%}
+	<div class="base-head">
+		<div class="first-head">
+			<a id="change-password" href="/change_password/">Change password</a>
+			<a id="logout" href="/logout/">Logout</a>
+		</div>
+		<div class="second-header">
+			<img src="{% static 'head2.jpeg' %}">
+			{% if user.is_superuser %}
+				<a id="home" href="/"> Home</a>
+				<a id="product" href="/products/"> Products</a>
+				<a id="sale" href="/sales/"> Sales</a>
+				<a id="profile" href="/profile/"> Profile</a>
+				<a id="shopping" href="/shopping/"> Shopping Preview</a>
+			{% elif user.is_staff %}
+				<a id="product" href="/products/"> Products</a>
+				<a id="sale" href="/sales/"> Sales</a>
+				<a id="message" href="/messages/"> Messages</a>
+			{% else %}
+				<a id="shopping" href="/shopping/"> Shopping</a>
+				<a id="contact" href="/contact/"> Contact Us</a>
+			{% endif %}
+
+			<span class="social"><a href=""><img src="{% static 'fb.png'%}"></a></span>
+			<span class="social"><a href=""><img src="{% static 'sm.png'%}"></a></span>
+			<span class="social"><a href=""><img src="{% static 'in.png'%}"></a></span>
+			<div class="clr"></div>
+		</div>
+	</div>
+
+{% endblock %}
+
+{% block content%}
+
+{% endblock %}
+
+{% block footer%}
+	<div id="foot" style="background-image:url({% static 'foot.jpeg'%});padding: 2%;text-align: center;color:tomato;">
+		© copy right 2021 Mardiat Super market management system
+	</div>
+{% endblock %}
+{% if section == 'Dashboard'%}
+	<script>
+		document.getElementById('home').style.color = 'tomato'
+	</script>
+{% elif section == 'Profile'%}
+	<script>
+		document.getElementById('profile').style.color = 'tomato'
+	</script>
+{% elif 'Sales' in section%}
+	<script>
+		document.getElementById('sale').style.color = 'tomato'
+	</script>
+{% elif section == 'Products'%}
+	<script>
+		document.getElementById('product').style.color = 'tomato'
+	</script>
+{% elif section == 'Shopping'%}
+	<script>
+		document.getElementById('shopping').style.color = 'tomato'
+	</script>
+{% elif section == 'Message'%}
+	<script>
+		document.getElementById('message').style.color = 'tomato'
+	</script>
+{% elif section == 'Contact'%}
+	<script>
+		document.getElementById('contact').style.color = 'tomato'
+	</script>
+{% endif %}
+</body>

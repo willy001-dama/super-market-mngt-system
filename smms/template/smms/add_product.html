@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Product Details{% endblock %}
+
+{% block content %}
+	<div class="add-product-block">
+		<div class="inner-product-block">
+			<form action="." method="POST" enctype="multipart/form-data">
+				<table id="add-product-table">
+					<tr>
+						<td>
+							{{form.name.label_tag}}
+						</td>
+						<td>
+							{{form.name}}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							{{form.price.label_tag}}
+						</td>
+						<td>
+							{{form.price}}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							{{form.category.label_tag}}
+						</td>
+						<td>
+							{{form.category}}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							{{form.sub_category.label_tag}}
+						</td>
+						<td>
+							{{form.sub_category}}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							{{form.supplier.label_tag}}
+						</td>
+						<td>
+							{{form.supplier}}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							{{form.quantity.label_tag}}
+						</td>
+						<td>
+							{{form.quantity}}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							{{form.picture.label_tag}}
+						</td>
+						<td>
+							{{form.picture}}
+						</td>
+					</tr>
+					
+				</table>
+				{% csrf_token %}
+				<button>Add New product</button>
+			</form>
+		</div>
+	</div>
+{% endblock %}

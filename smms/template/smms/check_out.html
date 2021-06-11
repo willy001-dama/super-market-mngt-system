@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title%}{{section}}{% endblock %}
+{% block content%}
+<div style="padding: 10px;background: #f1f1f1;">
+		<p style="text-align: center;font-size: 30px;text-shadow: 2px 12px 15px tomato;margin-top: 0px">
+			Selection <span style="font-weight: bolder;color: tomato">Analysis</span>
+		</p>
+		<center>
+			<div class="left-side">
+			<table style="text-align: left;width: 70%" id="bt">
+			<tr>
+				<th>
+					Items
+				</th>
+				<th>
+					Price
+				</th>
+				<th>
+					Option
+				</th>
+			</tr>
+			{% for item in item %}
+				<tr>
+					<td>
+						{{item.product.name}}
+					</td>
+					<td>
+						{{item.product.price}}
+					</td>
+					<td>
+						<a href="/remove_from_check_out/{{item.product.id}}" style="color: red; text-decoration:none;">Remove Item</a>
+					</td>
+				
+				</tr>
+			{% endfor %}
+		</table>
+		</div>
+		</center>
+		
+		<hr style="color: #f9f9f9">
+		<div class="right-side" style="background: white;">
+			<p style="float: left;width: 50%;text-align: right;padding-right: 5px;box-sizing: border-box;">
+				Total Goods Selected <span style="color: tomato">{{q}}</span> |
+			</p>
+			<p style="float: right;width: 50%;">
+				Total Amount to pay <span style="color: tomato">₦{{price}}</span> 
+			</p>
+			<div class="clr"></div>
+			<p style="text-align: center;">
+				{% if item %}
+					<a href="/reference_code/" style="background: tomato;text-decoration: none;padding:10px;border-radius: 50%;color:white">
+						Proceed To Pay
+					</a>
+					|
+					<a href="/cancel_selection/" style="background: tomato;text-decoration: none;padding:10px;border-radius: 50%;color:white">
+						Cancel Selection
+					</a>
+				{% endif %}
+			</p>
+		</div>
+		<div class="clr"></div>
+		
+</div>
+{% endblock %}

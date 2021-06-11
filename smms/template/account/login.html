@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>Login Page</title>
+</head>
+<body style="background-image: url('/static/bg2.jpg');font-family: helvetica">
+	<div class="login-page">
+		{% if error %}
+		<p>
+			Wrong Credentials, check and try again.
+		</p>
+		{% endif %}
+		<form action="." method="POST">
+			<p>
+				<img src="{% static 'head.png'%}"><input type="text" name="username" placeholder="Username" autocomplete="username">
+			</p>
+			<p>
+				<img src="{% static 'pad.jpeg'%}"><input type="password" name="password" placeholder="Password">
+			</p>
+			<input type="hidden" name="next" value="{{next}}">
+			{% csrf_token %}
+			<button>login</button>
+		</form>
+	</div>
+		<p style="padding: 20px;color: white; text-shadow: 0px 2px 10px tomato;font-size: 20px;text-align: center;">
+			You can create an account 
+			<a style="text-decoration: none;color:tomato" href="/customer/account/create/">Here</a>
+		</p>
+	
+
+	
+</body>
+</html>
